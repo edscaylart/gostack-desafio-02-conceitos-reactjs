@@ -6,10 +6,19 @@
 
 body {
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 div {
-  width: 100%;
   margin: 20px;
 }
 
@@ -22,6 +31,7 @@ div li + li {
   margin-top: 15px;
 }
 
+
 button {
   background: #7159c1;
   color: #fff;
@@ -31,9 +41,45 @@ button {
   margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
+  height: 40px;
 }
 
 div li button {
   margin: 0 15px;
   background: #ca4949;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+img {
+  height: 200px;
+}
+
+form .input-block {
+  display: flex;
+  flex-direction: column;
+}
+
+form .input-block label {
+  color: #acacac;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+}
+
+form .input-block input {
+  width: 100%;
+  height: 32px;
+  font-size: 14px;
+  color: #666;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+input {
+  height: 25px;
 }
